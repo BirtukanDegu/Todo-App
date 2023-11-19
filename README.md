@@ -32,7 +32,7 @@ Invesigating the issue, I found that the Redux store update for the task deletio
 
 ### Solution
 
-To address the issue, I optimized the Redux action for task deletion to dispatch a loading state immediately. I then utilized async/await within the Redux thunk to ensure synchronous execution, resulting in a smoother and more responsive UI update when deletig tasks.
+To address the issue, I optimized the Redux action for task deletion to dispatch a loading state immediately. I then utilized async/await within the Redux thunk to ensure synchronous execution, resulting in a smoother and more responsive UI update when deleting tasks.
 
 
 ### Setting up the project
