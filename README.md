@@ -19,22 +19,6 @@ This project follows a custom structure that combines the following:
 
 ... and some [more stuff](./package.json).
 
-
-## Challenges I face and how I approached them
-
-### Description
-
-Initially, task deletion funcionality had a delay in updating the UI, causing an inconsistent user experience.
-
-### Approach/Analysis
-
-Invesigating the issue, I found that the Redux store update for the task deletion was asynchroneous, leading to a brief delay in reflecting the change in the UI.
-
-### Solution
-
-To address the issue, I optimized the Redux action for task deletion to dispatch a loading state immediately. I then utilized async/await within the Redux thunk to ensure synchronous execution, resulting in a smoother and more responsive UI update when deleting tasks.
-
-
 ### Setting up the project
 
 Clone the repository and run the following:
